@@ -76,13 +76,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Sumary.aspx" />
     <Content Include="Web.config" />
+    <Content Include="myweb.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetResponce.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="myweb.aspx.cs">
+      <DependentUpon>myweb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myweb.aspx.designer.cs">
+      <DependentUpon>myweb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sumary.aspx.cs">
+      <DependentUpon>Sumary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sumary.aspx.designer.cs">
+      <DependentUpon>Sumary.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
